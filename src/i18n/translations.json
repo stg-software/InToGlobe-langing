@@ -1,0 +1,95 @@
+{
+    "es": {
+      "common": {
+        "welcome": "Bienvenid@",
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "password": "Contraseña",
+        "confirmPassword": "Confirmar contraseña",
+        "submit": "Enviar",
+        "cancel": "Cancelar",
+        "login": "Iniciar sesión",
+        "logout": "Cerrar sesión",
+        "register": "Registrarse",
+        "forgotPassword": "¿Olvidaste tu contraseña?"
+      },
+      "home": {
+        "header": "Bienvenido a InToGlobe",
+        "body": "En InToGlobe nos dedicamos a hacer realidad tus ideas y proyectos tecnológicos. Te ayudamos a llevar tu negocio al siguiente nivel.",
+        "ctaButton": "Conoce más"
+      },
+      "navigation": {
+        "home": "Inicio",
+        "about": "Nosotros",
+        "services": "Servicios",
+        "contact": "Contacto"
+      },
+      "errors": {
+        "required": "Este campo es requerido",
+        "invalidEmail": "Correo electrónico no válido",
+        "passwordLength": "La contraseña debe tener al menos 8 caracteres"
+      }
+    },
+    "en": {
+      "common": {
+        "welcome": "Welcome",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm password",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "login": "Login",
+        "logout": "Logout",
+        "register": "Register",
+        "forgotPassword": "Forgot password?"
+      },
+      "home": {
+        "header": "Welcome to InToGlobe",
+        "body": "At InToGlobe we are dedicated to making your ideas and technological projects come true. We help you take your business to the next level.",
+        "ctaButton": "Learn more"
+      },
+      "navigation": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+      },
+      "errors": {
+        "required": "This field is required",
+        "invalidEmail": "Invalid email",
+        "passwordLength": "Password must be at least 8 characters"
+      }
+    },
+    "fr": {
+      "common": {
+        "welcome": "Bienvenue",
+        "name": "Nom",
+        "email": "Email",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le mot de passe",
+        "submit": "Soumettre",
+        "cancel": "Annuler",
+        "login": "Connexion",
+        "logout": "Déconnexion",
+        "register": "S'inscrire",
+        "forgotPassword": "Mot de passe oublié?"
+      },
+      "home": {
+        "header": "Bienvenue à InToGlobe",
+        "body": "Chez InToGlobe, nous nous consacrons à concrétiser vos idées et projets technologiques. Nous vous aidons à faire passer votre entreprise au niveau supérieur.",
+        "ctaButton": "En savoir plus"
+      },
+      "navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "contact": "Contact"
+      },
+      "errors": {
+        "required": "Ce champ est obligatoire",
+        "invalidEmail": "Email invalide",
+        "passwordLength": "Le mot de passe doit contenir au moins 8 caractères"
+      }
+    }
+  }
