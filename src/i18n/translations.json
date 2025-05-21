@@ -1,95 +1,218 @@
 {
-    "es": {
-      "common": {
-        "welcome": "Bienvenid@",
-        "name": "Nombre",
-        "email": "Correo electrónico",
-        "password": "Contraseña",
-        "confirmPassword": "Confirmar contraseña",
-        "submit": "Enviar",
-        "cancel": "Cancelar",
-        "login": "Iniciar sesión",
-        "logout": "Cerrar sesión",
-        "register": "Registrarse",
-        "forgotPassword": "¿Olvidaste tu contraseña?"
+  "es": {
+    "common": {
+      "welcome": "Bienvenid@",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión",
+      "register": "Registrarse",
+      "forgotPassword": "¿Olvidaste tu contraseña?"
+    },
+    "home": {
+      "header": "Bienvenido a InToGlobe",
+      "title": "Transformamos tus ideas en realidades digitales",
+      "p1Body": "En InToGlobe, creamos software a medida para impulsar tu negocio. Desde landing pages impactantes hasta aplicaciones con IA, nuestro equipo convierte tus desafíos en soluciones tecnológicas.",
+      "listTitle": "Te ofrecemos:",
+      "listItmes": [
+        "Landing Pages que captan leads y aumentan ventas.",
+        "Apps Web y Móviles intuitivas y escalables.",
+        "Soluciones con IA para automatizar y optimizar procesos."
+      ],
+      "p2Body": "No solo desarrollamos código, construimos experiencias que marcan la diferencia."
+    },
+    "contact": {
+      "btnSubtext": "¿Listo para empezar?",
+      "btnText": "Contáctanos",
+      "p1body": "Contáctanos y hagamos crecer tu proyecto juntos.",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "successMessage": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
+      "errorMessage": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+      "options": {
+        "option1": "Landing Pages",
+        "option2": "Aplicaciones Web",
+        "option3": "Aplicaciones Móviles",
+        "option4": "No estoy seguro"
       },
-      "home": {
-        "header": "Bienvenido a InToGlobe",
-        "body": "En InToGlobe nos dedicamos a hacer realidad tus ideas y proyectos tecnológicos. Te ayudamos a llevar tu negocio al siguiente nivel.",
-        "ctaButton": "Conoce más"
-      },
-      "navigation": {
-        "home": "Inicio",
-        "about": "Nosotros",
-        "services": "Servicios",
-        "contact": "Contacto"
-      },
-      "errors": {
-        "required": "Este campo es requerido",
-        "invalidEmail": "Correo electrónico no válido",
-        "passwordLength": "La contraseña debe tener al menos 8 caracteres"
+      "aditiional": {
+        "option1": "Inteligencia Artificial"
       }
     },
-    "en": {
-      "common": {
-        "welcome": "Welcome",
-        "name": "Name",
-        "email": "Email",
-        "password": "Password",
-        "confirmPassword": "Confirm password",
-        "submit": "Submit",
-        "cancel": "Cancel",
-        "login": "Login",
-        "logout": "Logout",
-        "register": "Register",
-        "forgotPassword": "Forgot password?"
+    "about": {
+      "header1": "¿Quiénes somos?",
+      "p1body": "En InToGlobe, somos más que una empresa de desarrollo de software: somos tu aliado tecnológico. Combinamos expertise técnico con creatividad para ofrecer soluciones que generan valor real.",
+      "header2": "Nuestra historia",
+      "p2body": "Nacimos con la visión de simplificar la tecnología para empresas, sin importar su tamaño. Hoy, nuestro portafolio abarca desde startups hasta corporaciones, siempre con un enfoque personalizado.",
+      "header3": " ¿Por qué elegirnos?",
+      "aboutList": {
+        "item1": "Equipo especializado: Developers, diseñadores y expertos en IA trabajando en sinergia.",
+        "item2": "Metodologías ágiles: Entregas rápidas y adaptables a tus necesidades.",
+        "item3": "Soporte 360°: Acompañamiento desde el concepto hasta el lanzamiento y más allá."
       },
-      "home": {
-        "header": "Welcome to InToGlobe",
-        "body": "At InToGlobe we are dedicated to making your ideas and technological projects come true. We help you take your business to the next level.",
-        "ctaButton": "Learn more"
+      "p3body": "Creemos en la tecnología con propósito. Tu éxito es el nuestro."
+    },
+    "navigation": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "contact": "Contacto"
+    },
+    "errors": {
+      "required": "Este campo es requerido",
+      "invalidEmail": "Correo electrónico no válido",
+      "passwordLength": "La contraseña debe tener al menos 8 caracteres"
+    }
+  },
+  "en": {
+    "common": {
+      "welcome": "Welcome",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "login": "Login",
+      "logout": "Logout",
+      "register": "Register",
+      "forgotPassword": "Forgot password?"
+    },
+    "home": {
+      "header": "Welcome to InToGlobe",
+      "title": "We transform your ideas into digital realities",
+      "p1Body": "At InToGlobe, we create custom software to boost your business. From impactful landing pages to AI applications, our team turns your challenges into technological solutions.",
+      "listTitle": "We offer:",
+      "listItems": [
+        "Landing Pages that capture leads and increase sales.",
+        "Intuitive and scalable Web and Mobile Apps.",
+        "AI solutions to automate and optimize processes."
+      ],
+      "p2Body": "We don't just develop code, we build experiences that make a difference."
+    },
+    "contact": {
+      "btnSubtext": "Ready to start?",
+      "btnText": "Contact us",
+      "p1body": "Contact us and let's grow your project together.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "successMessage": "Thank you for your message! We'll contact you soon.",
+      "errorMessage": "There was an error sending your message. Please try again later.",
+      "options": {
+        "option1": "Landing Pages",
+        "option2": "Web Applications",
+        "option3": "Mobile Applications",
+        "option4": "I'm not sure"
       },
-      "navigation": {
-        "home": "Home",
-        "about": "About",
-        "services": "Services",
-        "contact": "Contact"
-      },
-      "errors": {
-        "required": "This field is required",
-        "invalidEmail": "Invalid email",
-        "passwordLength": "Password must be at least 8 characters"
+      "additional": {
+        "option1": "Artificial Intelligence"
       }
     },
-    "fr": {
-      "common": {
-        "welcome": "Bienvenue",
-        "name": "Nom",
-        "email": "Email",
-        "password": "Mot de passe",
-        "confirmPassword": "Confirmer le mot de passe",
-        "submit": "Soumettre",
-        "cancel": "Annuler",
-        "login": "Connexion",
-        "logout": "Déconnexion",
-        "register": "S'inscrire",
-        "forgotPassword": "Mot de passe oublié?"
+    "about": {
+      "header1": "Who we are?",
+      "p1body": "At InToGlobe, we're more than a software development company: we're your technology ally. We combine technical expertise with creativity to deliver solutions that generate real value.",
+      "header2": "Our story",
+      "p2body": "We were born with the vision of simplifying technology for businesses, regardless of their size. Today, our portfolio ranges from startups to corporations, always with a personalized approach.",
+      "header3": "Why choose us?",
+      "aboutList": {
+        "item1": "Specialized team: Developers, designers and AI experts working in synergy.",
+        "item2": "Agile methodologies: Fast deliveries adaptable to your needs.",
+        "item3": "360° support: Guidance from concept to launch and beyond."
       },
-      "home": {
-        "header": "Bienvenue à InToGlobe",
-        "body": "Chez InToGlobe, nous nous consacrons à concrétiser vos idées et projets technologiques. Nous vous aidons à faire passer votre entreprise au niveau supérieur.",
-        "ctaButton": "En savoir plus"
+      "p3body": "We believe in purposeful technology. Your success is ours."
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Invalid email",
+      "passwordLength": "Password must be at least 8 characters"
+    }
+  },
+  "fr": {
+    "common": {
+      "welcome": "Bienvenue",
+      "name": "Nom",
+      "email": "Email",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "submit": "Soumettre",
+      "cancel": "Annuler",
+      "login": "Connexion",
+      "logout": "Déconnexion",
+      "register": "S'inscrire",
+      "forgotPassword": "Mot de passe oublié?"
+    },
+    "home": {
+      "header": "Bienvenue chez InToGlobe",
+      "title": "Nous transformons vos idées en réalités numériques",
+      "p1Body": "Chez InToGlobe, nous créons des logiciels sur mesure pour booster votre entreprise. Des landing pages percutantes aux applications IA, notre équipe transforme vos défis en solutions technologiques.",
+      "listTitle": "Nous proposons:",
+      "listItems": [
+        "Des Landing Pages qui captent des leads et augmentent les ventes.",
+        "Des Apps Web et Mobiles intuitives et évolutives.",
+        "Des solutions IA pour automatiser et optimiser les processus."
+      ],
+      "p2Body": "Nous ne développons pas juste du code, nous créons des expériences qui font la différence."
+    },
+    "contact": {
+      "btnSubtext": "Prêt à commencer?",
+      "btnText": "Contactez-nous",
+      "p1body": "Contactez-nous et faisons grandir votre projet ensemble.",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer",
+      "cancel": "Annuler",
+      "successMessage": "Merci pour votre message! Nous vous contacterons bientôt.",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+      "options": {
+        "option1": "Landing Pages",
+        "option2": "Applications Web",
+        "option3": "Applications Mobiles",
+        "option4": "Je ne suis pas sûr"
       },
-      "navigation": {
-        "home": "Accueil",
-        "about": "À propos",
-        "services": "Services",
-        "contact": "Contact"
-      },
-      "errors": {
-        "required": "Ce champ est obligatoire",
-        "invalidEmail": "Email invalide",
-        "passwordLength": "Le mot de passe doit contenir au moins 8 caractères"
+      "additional": {
+        "option1": "Intelligence Artificielle"
       }
+    },
+    "about": {
+      "header1": "Qui sommes-nous?",
+      "p1body": "Chez InToGlobe, nous sommes plus qu'une entreprise de développement logiciel: nous sommes votre allié technologique. Nous combinons expertise technique et créativité pour fournir des solutions qui créent de la valeur réelle.",
+      "header2": "Notre histoire",
+      "p2body": "Nous sommes nés avec la vision de simplifier la technologie pour les entreprises, quelle que soit leur taille. Aujourd'hui, notre portfolio va des startups aux grandes entreprises, toujours avec une approche personnalisée.",
+      "header3": "Pourquoi nous choisir?",
+      "aboutList": {
+        "item1": "Équipe spécialisée: Développeurs, designers et experts en IA travaillant en synergie.",
+        "item2": "Méthodologies agiles: Livraisons rapides adaptées à vos besoins.",
+        "item3": "Support 360°: Accompagnement du concept au lancement et au-delà."
+      },
+      "p3body": "Nous croyons en une technologie à vocation. Votre succès est le nôtre."
+    },
+    "navigation": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire",
+      "invalidEmail": "Email invalide",
+      "passwordLength": "Le mot de passe doit contenir au moins 8 caractères"
     }
   }
+}

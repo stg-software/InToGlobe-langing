@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme, Button, ButtonGroup } from '@mui/material';
+import { Box, Typography, useTheme, Button } from '@mui/material';
 import { useTranslation } from '../hooks/useTranslation'; // Usa tu hook personalizado
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
     }}>
       <Typography 
         variant="h2" 
-        component="h1" 
         gutterBottom
         color="text.primary"
         sx={{ mb: 4 }}
@@ -23,26 +22,23 @@ export default function Home() {
       </Typography>
       
       <Typography 
-        variant="body1"
+        variant="h5" 
+        gutterBottom
+        color="text.primary"
+        sx={{ mb: 4 }}
+      >
+        {t('home.title')}
+      </Typography>
+
+      <Typography 
         color="text.secondary"
         sx={{ mb: 4, fontSize: '1.1rem' }}
       >
-        {t('home.body')}
+        {t('home.p1Body')}
       </Typography>
+
       
-      <Button 
-        variant="contained" 
-        color="primary"
-        size="large"
-        sx={{
-          px: 4,
-          py: 2,
-          fontSize: '1.1rem',
-          borderRadius: 2
-        }}
-      >
-        {t('home.ctaButton')}
-      </Button>
+      
     </Box>
   );
 }
