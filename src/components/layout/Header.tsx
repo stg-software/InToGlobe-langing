@@ -7,9 +7,7 @@ import logo from '../../assets/logo2.svg';
 import { useTranslation } from '../../hooks/useTranslation'; // Usa tu hook personalizado
 import React from 'react';
 import headerBg from '../../assets/header/Header1.jpg';
-
-//import { useTranslation } from 'react-i18next';
-
+import { alpha } from '@mui/material/styles';
 
 export default function Header() {
   const { t, changeLanguage } = useTranslation();
@@ -63,20 +61,20 @@ export default function Header() {
         src={headerBg}
       />
       
-      <AppBar 
+      <AppBar
         position="static"
         sx={{
-          height: 80,
+          height: 60,
           width: '95%',
           borderRadius: 2,
           marginTop: 2,
           marginLeft: "auto",
           marginRight: "auto",
-          padding: 1,
+          // padding: 1, ❌ quitar esto
           boxShadow: theme.shadows[4],
           transition: 'all 0.3s ease',
-          backgroundColor: 'background.secondary',
-          position: 'relative', // Asegura que esté encima de la imagen
+          backgroundColor: alpha(theme.palette.primary.main, 0.6),
+          position: 'relative',
         }}
       >
         <Toolbar
@@ -85,7 +83,9 @@ export default function Header() {
             justifyContent: 'space-between',
             alignItems: 'center',
             height: '100%',
-          }}>
+            minHeight: '100% !important', // Fuerza el alto al 100%
+          }}
+        >
           <Box 
             component="img"
             src={logo}
@@ -96,10 +96,11 @@ export default function Header() {
               borderRadius: 2,
               pl: 1,
               pr: 1,
+              display: 'flex',
+              alignItems: 'center', // Centrado vertical adicional
               // filter: theme.palette.mode === 'dark' ? 'brightness(0) invert(1)' : 'none'
             }}
           />
-
           
 
           <Box>
