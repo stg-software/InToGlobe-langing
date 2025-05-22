@@ -6,6 +6,7 @@ import { useThemeContext } from '../../context/ThemeContext';
 import logo from '../../assets/logo2.svg';
 import { useTranslation } from '../../hooks/useTranslation'; // Usa tu hook personalizado
 import React from 'react';
+import headerBg from '../../assets/header/Header1.jpg';
 
 //import { useTranslation } from 'react-i18next';
 
@@ -42,108 +43,130 @@ export default function Header() {
   }
 
   return (
-    <AppBar 
-      position="static"
-      sx={{
-        height: 80,
-        width: '95%',
-        borderRadius: 2,
-        marginTop: 2,
-        marginLeft: "auto",
-        marginRight: "auto",
-        padding: 1,
-        boxShadow: theme.shadows[4],
-        transition: 'all 0.3s ease',
-        // Elige una de estas opciones de fondo:
-        backgroundColor: 'background.secondary', // Fondo claro
-      }}
-    >
-      <Toolbar
+    <Box
+      height={'45vh'}
+      position="relative" // Añade esto
+      overflow="hidden" // Oculta cualquier parte que sobresalga
+    > 
+      <Box
+        component="img"
+        alt="bg image"
         sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          height: '100%',
-        }}>
-        <Box 
-          component="img"
-          src={logo}
-          alt="Logo"
+          position: 'absolute', // Posiciona absolutamente respecto al contenedor padre
+          top: -10,
+          width: '100%',
+          minWidth: '650px',
+          //objectFit: 'cover', // Cubre el área manteniendo la relación de aspecto
+          zIndex: 0, // Coloca detrás de todo
+          borderRadius: theme.shape.borderRadius,
+        }}
+        src={headerBg}
+      />
+      
+      <AppBar 
+        position="static"
+        sx={{
+          height: 80,
+          width: '95%',
+          borderRadius: 2,
+          marginTop: 2,
+          marginLeft: "auto",
+          marginRight: "auto",
+          padding: 1,
+          boxShadow: theme.shadows[4],
+          transition: 'all 0.3s ease',
+          backgroundColor: 'background.secondary',
+          position: 'relative', // Asegura que esté encima de la imagen
+        }}
+      >
+        <Toolbar
           sx={{
-            backgroundColor: '#e8d5b5',
-            height: 40,
-            borderRadius: 2,
-            pl: 1,
-            pr: 1,
-            // filter: theme.palette.mode === 'dark' ? 'brightness(0) invert(1)' : 'none'
-          }}
-        />
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            height: '100%',
+          }}>
+          <Box 
+            component="img"
+            src={logo}
+            alt="Logo"
+            sx={{
+              backgroundColor: '#e8d5b5',
+              height: 40,
+              borderRadius: 2,
+              pl: 1,
+              pr: 1,
+              // filter: theme.palette.mode === 'dark' ? 'brightness(0) invert(1)' : 'none'
+            }}
+          />
 
-        
+          
 
-        <Box>
-          <IconButton 
-            color="inherit" 
-            ref={langMenue}
-            id="language-button"
-            aria-controls={open ? 'composition-menu' : undefined}
-            aria-expanded={open ? 'true' : undefined}
-            aria-haspopup="true"
-            onClick={langMenuToggler}>
+          <Box>
+            <IconButton 
+              color="inherit" 
+              ref={langMenue}
+              id="language-button"
+              aria-controls={open ? 'composition-menu' : undefined}
+              aria-expanded={open ? 'true' : undefined}
+              aria-haspopup="true"
+              onClick={langMenuToggler}>
 
-            <LanguageIcon />
-          </IconButton>
-          <Popper
-            open={open}
-            anchorEl={langMenue.current}
-            role={undefined}
-            placement="bottom-start"
-            transition
-            disablePortal
-          >
-            {({ TransitionProps, placement }) => (
-              <Grow
-                {...TransitionProps}
-                style={{
-                  transformOrigin:
-                    placement === 'bottom-start' ? 'left top' : 'left bottom',
-                }}
-              >
-                <Paper>
-                  <ClickAwayListener onClickAway={langMenueClose}>
-                    <MenuList
-                      autoFocusItem={open}
-                      id="composition-menu"
-                      aria-labelledby="composition-button"
-                      onKeyDown={handleListKeyDown}
-                    >
-                      <MenuItem 
-                        onClick={(event) => langMenueClose(event, 'es')}
+              <LanguageIcon />
+            </IconButton>
+            <Popper
+              open={open}
+              anchorEl={langMenue.current}
+              role={undefined}
+              placement="bottom-start"
+              transition
+              disablePortal
+            >
+              {({ TransitionProps, placement }) => (
+                <Grow
+                  {...TransitionProps}
+                  style={{
+                    transformOrigin:
+                      placement === 'bottom-start' ? 'left top' : 'left bottom',
+                  }}
+                >
+                  <Paper>
+                    <ClickAwayListener onClickAway={langMenueClose}>
+                      <MenuList
+                        autoFocusItem={open}
+                        id="composition-menu"
+                        aria-labelledby="composition-button"
+                        onKeyDown={handleListKeyDown}
                       >
-                        Español
-                      </MenuItem>
-                      <MenuItem 
-                        onClick={(event) => langMenueClose(event, 'en')}
-                      >
-                        English
-                      </MenuItem>
-                      <MenuItem 
-                        onClick={(event) => langMenueClose(event,'fr')}
-                      >
-                        Français
-                      </MenuItem>
-                    </MenuList>
-                  </ClickAwayListener>
-                </Paper>
-              </Grow>
-            )}
-          </Popper>
-          <IconButton onClick={toggleColorMode} color="inherit">
-            {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-          </IconButton>
-        </Box>
-        
-      </Toolbar>
-    </AppBar>
+                        <MenuItem 
+                          onClick={(event) => langMenueClose(event, 'es')}
+                        >
+                          Español
+                        </MenuItem>
+                        <MenuItem 
+                          onClick={(event) => langMenueClose(event, 'en')}
+                        >
+                          English
+                        </MenuItem>
+                        <MenuItem 
+                          onClick={(event) => langMenueClose(event,'fr')}
+                        >
+                          Français
+                        </MenuItem>
+                      </MenuList>
+                    </ClickAwayListener>
+                  </Paper>
+                </Grow>
+              )}
+            </Popper>
+            <IconButton onClick={toggleColorMode} color="inherit">
+              {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+            </IconButton>
+          </Box>
+          
+        </Toolbar>
+      </AppBar>
+    </Box>
+    
   );
 }
