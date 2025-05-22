@@ -12,6 +12,9 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@fontsource/birthstone": "^5.2.5",
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/poppins": "^5.2.6",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
     "i18next": "^25.0.1",

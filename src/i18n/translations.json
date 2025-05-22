@@ -18,11 +18,7 @@
       "title": "Transformamos tus ideas en realidades digitales",
       "p1Body": "En InToGlobe, creamos software a medida para impulsar tu negocio. Desde landing pages impactantes hasta aplicaciones con IA, nuestro equipo convierte tus desafíos en soluciones tecnológicas.",
       "listTitle": "Te ofrecemos:",
-      "listItmes": [
-        "Landing Pages que captan leads y aumentan ventas.",
-        "Apps Web y Móviles intuitivas y escalables.",
-        "Soluciones con IA para automatizar y optimizar procesos."
-      ],
+      "listItems": "Landing Pages que captan leads y aumentan ventas./Apps Web y Móviles intuitivas y escalables./Soluciones con IA para automatizar y optimizar procesos.",
       "p2Body": "No solo desarrollamos código, construimos experiencias que marcan la diferencia."
     },
     "contact": {
@@ -90,11 +86,7 @@
       "title": "We transform your ideas into digital realities",
       "p1Body": "At InToGlobe, we create custom software to boost your business. From impactful landing pages to AI applications, our team turns your challenges into technological solutions.",
       "listTitle": "We offer:",
-      "listItems": [
-        "Landing Pages that capture leads and increase sales.",
-        "Intuitive and scalable Web and Mobile Apps.",
-        "AI solutions to automate and optimize processes."
-      ],
+      "listItems": "Landing Pages that capture leads and increase sales./Intuitive and scalable Web and Mobile Apps./AI solutions to automate and optimize processes.",
       "p2Body": "We don't just develop code, we build experiences that make a difference."
     },
     "contact": {
@@ -162,11 +154,7 @@
       "title": "Nous transformons vos idées en réalités numériques",
       "p1Body": "Chez InToGlobe, nous créons des logiciels sur mesure pour booster votre entreprise. Des landing pages percutantes aux applications IA, notre équipe transforme vos défis en solutions technologiques.",
       "listTitle": "Nous proposons:",
-      "listItems": [
-        "Des Landing Pages qui captent des leads et augmentent les ventes.",
-        "Des Apps Web et Mobiles intuitives et évolutives.",
-        "Des solutions IA pour automatiser et optimiser les processus."
-      ],
+      "listItems": "Des Landing Pages qui captent des leads et augmentent les ventes./Des Apps Web et Mobiles intuitives et évolutives./Des solutions IA pour automatiser et optimiser les processus.",
       "p2Body": "Nous ne développons pas juste du code, nous créons des expériences qui font la différence."
     },
     "contact": {

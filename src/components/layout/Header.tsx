@@ -48,7 +48,7 @@ export default function Header() {
         height: 80,
         width: '95%',
         borderRadius: 2,
-        margin: 2,
+        marginTop: 2,
         marginLeft: "auto",
         marginRight: "auto",
         padding: 1,
@@ -70,7 +70,7 @@ export default function Header() {
           src={logo}
           alt="Logo"
           sx={{
-            backgroundColor: '#e8d5b5', // Usando el color del tema
+            backgroundColor: '#e8d5b5',
             height: 40,
             borderRadius: 2,
             pl: 1,

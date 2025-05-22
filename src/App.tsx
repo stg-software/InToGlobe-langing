@@ -3,6 +3,9 @@ import DefaultContainer from './components/layout/DefaultContainer';
 import Home from './pages/Home';
 import { useThemeContext } from './context/ThemeContext';
 import { CssBaseline } from '@mui/material';
+import '@fontsource/birthstone';
+import '@fontsource/inter/300.css';
+import '@fontsource/poppins/400.css';
 
 function App() {
   const { mode } = useThemeContext();
