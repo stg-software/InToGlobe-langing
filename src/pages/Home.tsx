@@ -81,7 +81,7 @@ export default function Home() {
         <Grid
           borderRadius={2} 
           size={{ xs: 12, md: 6 }} 
-          backgroundColor={theme.palette.info.main}>
+          sx={{ backgroundColor: theme.palette.info.main }}>
           <Box
             component="img"
             alt="imagen1"
@@ -98,7 +98,7 @@ export default function Home() {
         <Grid
           borderRadius={2}
           size={{ xs: 12, md: 6 }}
-          backgroundColor={theme.palette.info.main}
+          sx={{ backgroundColor: theme.palette.info.main }}
         >
           <Box
             component="img"

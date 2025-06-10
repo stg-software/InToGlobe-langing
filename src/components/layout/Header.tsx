@@ -8,21 +8,37 @@ import { useTranslation } from '../../hooks/useTranslation'; // Usa tu hook pers
 import React from 'react';
 import headerBg from '../../assets/header/Header1.jpg';
 import { alpha } from '@mui/material/styles';
+import type { Language } from '../../context/LanguageContext';
+import { Link as RouterLink } from 'react-router-dom';
+import { Button } from '@mui/material';
+
 
 export default function Header() {
-  const { t, changeLanguage } = useTranslation();
+  const { changeLanguage } = useTranslation();
   const theme = useTheme();
   const { toggleColorMode } = useThemeContext();
   const [open, setOpen] = React.useState(false);
-  const langMenue = React.useRef(null);
+  const langMenue = React.useRef<HTMLButtonElement | null>(null);
+  
   //const { t, i18n } = useTranslation();
   
   const langMenuToggler = () => {
     setOpen((prevOpen) => !prevOpen);
   };
 
-  const langMenueClose = (event, lang: string | null=null) => {
-    if (langMenue.current && langMenue.current.contains(event.target)) {
+  const handleClickAway = (event: MouseEvent | TouchEvent) => {
+    langMenueClose(event, null);
+  };
+
+  const langMenueClose = (
+    event: Event | React.MouseEvent<HTMLElement>,
+    lang: Language | null
+  ) => {
+    if (
+      langMenue.current &&
+      event.target &&
+      langMenue.current.contains(event.target as Node)
+    ) {
       return;
     }
     if (lang) {
@@ -31,7 +47,7 @@ export default function Header() {
     setOpen(false);
   };
 
-  function handleListKeyDown(event) {
+  function handleListKeyDown(event: React.KeyboardEvent<HTMLUListElement>) {
     if (event.key === 'Tab') {
       event.preventDefault();
       setOpen(false);
@@ -70,7 +86,6 @@ export default function Header() {
           marginTop: 2,
           marginLeft: "auto",
           marginRight: "auto",
-          // padding: 1, ❌ quitar esto
           boxShadow: theme.shadows[4],
           transition: 'all 0.3s ease',
           backgroundColor: alpha(theme.palette.primary.main, 0.6),
@@ -102,6 +117,38 @@ export default function Header() {
             }}
           />
           
+          <Box sx={{ 
+            display: 'flex', 
+            gap: 2,}}>
+            <Button
+              component={RouterLink}
+              to="/"
+              sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
+            >
+              Inicio
+            </Button>
+            <Button
+              component={RouterLink}
+              to="/nosotros"
+              sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
+            >
+              Nosotros
+            </Button>
+            <Button
+              component={RouterLink}
+              to="/servicios"
+              sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
+            >
+              Servicios
+            </Button>
+            <Button
+              component={RouterLink}
+              to="/contacto"
+              sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
+            >
+              Contacto
+            </Button>
+          </Box>
 
           <Box>
             <IconButton 
@@ -132,7 +179,7 @@ export default function Header() {
                   }}
                 >
                   <Paper>
-                    <ClickAwayListener onClickAway={langMenueClose}>
+                    <ClickAwayListener onClickAway={handleClickAway}>
                       <MenuList
                         autoFocusItem={open}
                         id="composition-menu"

@@ -2,7 +2,7 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 import i18n from '../i18n/i18n';
 
-type Language = 'es' | 'en' | 'fr';
+export type Language = 'es' | 'en' | 'fr';
 
 interface LanguageContextType {
   language: Language;

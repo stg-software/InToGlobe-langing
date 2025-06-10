@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Box>
       <Typography variant="h4" component="h1" gutterBottom>
-        Acerca de Nosotros
+        Contacto
       </Typography>
     </Box>
   );
