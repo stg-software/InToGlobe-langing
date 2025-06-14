@@ -32,28 +32,17 @@
       "cancel": "Cancelar",
       "successMessage": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
       "errorMessage": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
-      "options": {
-        "option1": "Landing Pages",
-        "option2": "Aplicaciones Web",
-        "option3": "Aplicaciones Móviles",
-        "option4": "No estoy seguro"
-      },
-      "aditiional": {
-        "option1": "Inteligencia Artificial"
-      }
+      "listTitle": "¿Qué tipo de proyecto tienes en mente?",
+      "contactList": "Landing Pages/Aplicaciones Web/Aplicaciones Móviles/No estoy seguro"
     },
     "about": {
       "header1": "¿Quiénes somos?",
       "p1body": "En InToGlobe, somos más que una empresa de desarrollo de software: somos tu aliado tecnológico. Combinamos expertise técnico con creatividad para ofrecer soluciones que generan valor real.",
       "header2": "Nuestra historia",
       "p2body": "Nacimos con la visión de simplificar la tecnología para empresas, sin importar su tamaño. Hoy, nuestro portafolio abarca desde startups hasta corporaciones, siempre con un enfoque personalizado.",
-      "header3": " ¿Por qué elegirnos?",
-      "aboutList": {
-        "item1": "Equipo especializado: Developers, diseñadores y expertos en IA trabajando en sinergia.",
-        "item2": "Metodologías ágiles: Entregas rápidas y adaptables a tus necesidades.",
-        "item3": "Soporte 360°: Acompañamiento desde el concepto hasta el lanzamiento y más allá."
-      },
-      "p3body": "Creemos en la tecnología con propósito. Tu éxito es el nuestro."
+      "aboutListTitle": " ¿Por qué elegirnos?",
+      "aboutList": "Equipo especializado: Developers, diseñadores y expertos en IA trabajando en sinergia./Metodologías ágiles: Entregas rápidas y adaptables a tus necesidades./Soporte 360: Acompañamiento desde el concepto hasta el lanzamiento y más allá.",
+      "p3body": "Creemos en la tecnología con propósito. Tu éxito es el nuestro."  
     },
     "navigation": {
       "home": "Inicio",
@@ -100,27 +89,16 @@
       "cancel": "Cancel",
       "successMessage": "Thank you for your message! We'll contact you soon.",
       "errorMessage": "There was an error sending your message. Please try again later.",
-      "options": {
-        "option1": "Landing Pages",
-        "option2": "Web Applications",
-        "option3": "Mobile Applications",
-        "option4": "I'm not sure"
-      },
-      "additional": {
-        "option1": "Artificial Intelligence"
-      }
+      "listTitle": "What kind of project do you have in mind?",
+      "contactList": "Landing Pages/Web Applications/Mobile Applications/I'm not sure"
     },
     "about": {
       "header1": "Who we are?",
       "p1body": "At InToGlobe, we're more than a software development company: we're your technology ally. We combine technical expertise with creativity to deliver solutions that generate real value.",
       "header2": "Our story",
       "p2body": "We were born with the vision of simplifying technology for businesses, regardless of their size. Today, our portfolio ranges from startups to corporations, always with a personalized approach.",
-      "header3": "Why choose us?",
-      "aboutList": {
-        "item1": "Specialized team: Developers, designers and AI experts working in synergy.",
-        "item2": "Agile methodologies: Fast deliveries adaptable to your needs.",
-        "item3": "360° support: Guidance from concept to launch and beyond."
-      },
+      "aboutListTitle": "Why choose us?",
+      "aboutList": "Specialized team: Developers, designers and AI experts working in synergy./Agile methodologies: Fast deliveries adaptable to your needs./360 support: Guidance from concept to launch and beyond.",
       "p3body": "We believe in purposeful technology. Your success is ours."
     },
     "navigation": {
@@ -168,27 +146,16 @@
       "cancel": "Annuler",
       "successMessage": "Merci pour votre message! Nous vous contacterons bientôt.",
       "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
-      "options": {
-        "option1": "Landing Pages",
-        "option2": "Applications Web",
-        "option3": "Applications Mobiles",
-        "option4": "Je ne suis pas sûr"
-      },
-      "additional": {
-        "option1": "Intelligence Artificielle"
-      }
+      "listTitle": "Quel type de projet avez-vous en tête?",
+      "contactList": "Landing Pages/Applications Web/Applications Mobiles/Je ne suis pas sûr"
     },
     "about": {
       "header1": "Qui sommes-nous?",
       "p1body": "Chez InToGlobe, nous sommes plus qu'une entreprise de développement logiciel: nous sommes votre allié technologique. Nous combinons expertise technique et créativité pour fournir des solutions qui créent de la valeur réelle.",
       "header2": "Notre histoire",
       "p2body": "Nous sommes nés avec la vision de simplifier la technologie pour les entreprises, quelle que soit leur taille. Aujourd'hui, notre portfolio va des startups aux grandes entreprises, toujours avec une approche personnalisée.",
-      "header3": "Pourquoi nous choisir?",
-      "aboutList": {
-        "item1": "Équipe spécialisée: Développeurs, designers et experts en IA travaillant en synergie.",
-        "item2": "Méthodologies agiles: Livraisons rapides adaptées à vos besoins.",
-        "item3": "Support 360°: Accompagnement du concept au lancement et au-delà."
-      },
+      "aboutListTitle": "Pourquoi nous choisir?",
+      "aboutList": "Équipe spécialisée: Développeurs, designers et experts en IA travaillant en synergie./Méthodologies agiles: Livraisons rapides adaptées à vos besoins./Support 360°: Accompagnement du concept au lancement et au-delà.",
       "p3body": "Nous croyons en une technologie à vocation. Votre succès est le nôtre."
     },
     "navigation": {

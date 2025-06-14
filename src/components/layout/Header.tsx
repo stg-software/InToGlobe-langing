@@ -16,6 +16,7 @@ import { Button } from '@mui/material';
 export default function Header() {
   const { changeLanguage } = useTranslation();
   const theme = useTheme();
+  const { t } = useTranslation();
   const { toggleColorMode } = useThemeContext();
   const [open, setOpen] = React.useState(false);
   const langMenue = React.useRef<HTMLButtonElement | null>(null);
@@ -125,28 +126,28 @@ export default function Header() {
               to="/"
               sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
             >
-              Inicio
+              {t('navigation.home')}
             </Button>
             <Button
               component={RouterLink}
               to="/nosotros"
               sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
             >
-              Nosotros
+              {t('navigation.about')}
             </Button>
             <Button
               component={RouterLink}
               to="/servicios"
               sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
             >
-              Servicios
+              {t('navigation.services')}
             </Button>
             <Button
               component={RouterLink}
               to="/contacto"
               sx={{ fontFamily: 'Poppins, sans-serif', color: 'white', textTransform: 'none', fontWeight: 'bold' }}
             >
-              Contacto
+              {t('navigation.contact')}
             </Button>
           </Box>
 

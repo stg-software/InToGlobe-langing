@@ -25,12 +25,13 @@ export default function Home() {
   console.log('itemsArray:', itemsArray);
   
   return (
-    <Box sx={{ 
-      p: 3,
-      textAlign: 'center',
-      maxWidth: '80vw',
-      mx: 'auto'
-    }}>
+    <Box 
+      sx={{ 
+        p: 3,
+        textAlign: 'center',
+        maxWidth: '80vw',
+        mx: 'auto'
+      }}>
       <Typography 
         variant="h2" 
         gutterBottom
