@@ -43,17 +43,19 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
                 success: { main: '#807381' }, // Gris
                 background: { default: '#f5f5f5', paper: '#ffffff' }, // claro -- claro 
                 text: { primary: '#2d2d2d', secondary: '#6c007f' }, // Negro -- Morado
+                custom: { infoSecondary: '#7FC28E' }
               }
             : // Paleta para modo oscuro
               {
                 primary: { main: '#9baccf', contrastText: '#000000' },
                 secondary: { main: '#e8d5b5', contrastText: '#000000' },
-                error: { main: '#ff7043' }, // Naranja más claro
+                error: { main: '#491D00' }, // Naranja más claro
                 warning: { main: '#ffb74d' }, // Versión clara del beige
                 info: { main: '#64b5f6' }, // Azul más vibrante
                 success: { main: '#81c784' }, // Verde suave
                 background: { default: '#121212', paper: '#1e1e1e' },
                 text: { primary: '#ffffff', secondary: '#9baccf' },
+                custom: { infoSecondary: '#0C2612' }
               }),
         },
       }),

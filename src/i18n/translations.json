@@ -24,12 +24,12 @@
     "contact": {
       "btnSubtext": "¿Listo para empezar?",
       "btnText": "Contáctanos",
-      "p1body": "Contáctanos y hagamos crecer tu proyecto juntos.",
+      "header": "Contáctanos",
+      "p1body": "Hagamos crecer tu proyecto juntos.",
       "name": "Nombre",
       "email": "Correo electrónico",
       "message": "Mensaje",
       "submit": "Enviar",
-      "cancel": "Cancelar",
       "successMessage": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
       "errorMessage": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
       "listTitle": "¿Qué tipo de proyecto tienes en mente?",
@@ -39,8 +39,8 @@
       "header1": "¿Quiénes somos?",
       "p1body": "En InToGlobe, somos más que una empresa de desarrollo de software: somos tu aliado tecnológico. Combinamos expertise técnico con creatividad para ofrecer soluciones que generan valor real.",
       "header2": "Nuestra historia",
-      "p2body": "Nacimos con la visión de simplificar la tecnología para empresas, sin importar su tamaño. Hoy, nuestro portafolio abarca desde startups hasta corporaciones, siempre con un enfoque personalizado.",
-      "aboutListTitle": " ¿Por qué elegirnos?",
+      "p2body": "Nacimos hace más de 10 años con la visión de simplificar la tecnología para empresas, sin importar su tamaño. Hoy, nuestro portafolio abarca desde startups hasta corporaciones, siempre con un enfoque personalizado.",
+      "aboutListTitle": "¿Por qué elegirnos?",
       "aboutList": "Equipo especializado: Developers, diseñadores y expertos en IA trabajando en sinergia./Metodologías ágiles: Entregas rápidas y adaptables a tus necesidades./Soporte 360: Acompañamiento desde el concepto hasta el lanzamiento y más allá.",
       "p3body": "Creemos en la tecnología con propósito. Tu éxito es el nuestro."  
     },
@@ -54,6 +54,16 @@
       "required": "Este campo es requerido",
       "invalidEmail": "Correo electrónico no válido",
       "passwordLength": "La contraseña debe tener al menos 8 caracteres"
+    },
+    "services": {
+      "header": "Nuestros Servicios",
+      "webDev": "Desarrollo Web",
+      "mobileApps": "Aplicaciones Móviles",
+      "aiSolutions": "Soluciones de IA",
+      "customSoftware": "Software a Medida",
+      "wdBody": "Creamos sitios web atractivos y funcionales que impulsan tu presencia en línea. Desde landing pages hasta plataformas completas, nuestro enfoque es siempre centrado en el usuario.",
+      "maBody": "Desarrollamos aplicaciones móviles nativas e híbridas que ofrecen una experiencia fluida y atractiva. Ya sea para iOS o Android, nuestras apps están diseñadas para escalar y adaptarse a tus necesidades.",
+      "aiBody": "Implementamos soluciones de inteligencia artificial que optimizan procesos y mejoran la toma de decisiones. Desde chatbots hasta análisis predictivo, llevamos tu negocio al siguiente nivel con tecnología avanzada."
     }
   },
   "en": {
@@ -81,12 +91,12 @@
     "contact": {
       "btnSubtext": "Ready to start?",
       "btnText": "Contact us",
-      "p1body": "Contact us and let's grow your project together.",
+      "header": "Contact us",
+      "p1body": "Let's grow your project together.",
       "name": "Name",
       "email": "Email",
       "message": "Message",
       "submit": "Submit",
-      "cancel": "Cancel",
       "successMessage": "Thank you for your message! We'll contact you soon.",
       "errorMessage": "There was an error sending your message. Please try again later.",
       "listTitle": "What kind of project do you have in mind?",
@@ -96,7 +106,7 @@
       "header1": "Who we are?",
       "p1body": "At InToGlobe, we're more than a software development company: we're your technology ally. We combine technical expertise with creativity to deliver solutions that generate real value.",
       "header2": "Our story",
-      "p2body": "We were born with the vision of simplifying technology for businesses, regardless of their size. Today, our portfolio ranges from startups to corporations, always with a personalized approach.",
+      "p2body": "We were born more than 10 years ago with the vision of simplifying technology for businesses, regardless of their size. Today, our portfolio ranges from startups to corporations, always with a personalized approach.",
       "aboutListTitle": "Why choose us?",
       "aboutList": "Specialized team: Developers, designers and AI experts working in synergy./Agile methodologies: Fast deliveries adaptable to your needs./360 support: Guidance from concept to launch and beyond.",
       "p3body": "We believe in purposeful technology. Your success is ours."
@@ -111,6 +121,16 @@
       "required": "This field is required",
       "invalidEmail": "Invalid email",
       "passwordLength": "Password must be at least 8 characters"
+    },
+    "services": {
+      "header": "Our Services",
+      "webDev": "Web Development",
+      "mobileApps": "Mobile Applications",
+      "aiSolutions": "AI Solutions",
+      "customSoftware": "Custom Software",
+      "wdBody": "We create attractive and functional websites that boost your online presence. From landing pages to complete platforms, our approach is always user-centered.",
+      "maBody": "We develop native and hybrid mobile applications that offer a smooth and engaging experience. Whether for iOS or Android, our apps are designed to scale and adapt to your needs.",
+      "aiBody": "We implement artificial intelligence solutions that optimize processes and improve decision making. From chatbots to predictive analytics, we take your business to the next level with advanced technology."
     }
   },
   "fr": {
@@ -132,18 +152,18 @@
       "title": "Nous transformons vos idées en réalités numériques",
       "p1Body": "Chez InToGlobe, nous créons des logiciels sur mesure pour booster votre entreprise. Des landing pages percutantes aux applications IA, notre équipe transforme vos défis en solutions technologiques.",
       "listTitle": "Nous proposons:",
-      "listItems": "Des Landing Pages qui captent des leads et augmentent les ventes./Des Apps Web et Mobiles intuitives et évolutives./Des solutions IA pour automatiser et optimiser les processus.",
-      "p2Body": "Nous ne développons pas juste du code, nous créons des expériences qui font la différence."
+      "listItems": "Des Landing Pages qui captent des prospects et augmentent les ventes./Des Apps Web et Mobiles intuitives et évolutives./Des solutions IA pour automatiser et optimiser les processus.",
+      "p2Body": "Nous ne développons pas seulement du code, nous créons des expériences qui font la différence."
     },
     "contact": {
       "btnSubtext": "Prêt à commencer?",
       "btnText": "Contactez-nous",
-      "p1body": "Contactez-nous et faisons grandir votre projet ensemble.",
+      "header": "Contactez-nous",
+      "p1body": "Faisons grandir votre projet ensemble.",
       "name": "Nom",
       "email": "Email",
       "message": "Message",
       "submit": "Envoyer",
-      "cancel": "Annuler",
       "successMessage": "Merci pour votre message! Nous vous contacterons bientôt.",
       "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
       "listTitle": "Quel type de projet avez-vous en tête?",
@@ -153,7 +173,7 @@
       "header1": "Qui sommes-nous?",
       "p1body": "Chez InToGlobe, nous sommes plus qu'une entreprise de développement logiciel: nous sommes votre allié technologique. Nous combinons expertise technique et créativité pour fournir des solutions qui créent de la valeur réelle.",
       "header2": "Notre histoire",
-      "p2body": "Nous sommes nés avec la vision de simplifier la technologie pour les entreprises, quelle que soit leur taille. Aujourd'hui, notre portfolio va des startups aux grandes entreprises, toujours avec une approche personnalisée.",
+      "p2body": "Nous sommes nés il y a plus de 10 ans avec la vision de simplifier la technologie pour les entreprises, quelle que soit leur taille. Aujourd'hui, notre portfolio va des startups aux grandes entreprises, toujours avec une approche personnalisée.",
       "aboutListTitle": "Pourquoi nous choisir?",
       "aboutList": "Équipe spécialisée: Développeurs, designers et experts en IA travaillant en synergie./Méthodologies agiles: Livraisons rapides adaptées à vos besoins./Support 360°: Accompagnement du concept au lancement et au-delà.",
       "p3body": "Nous croyons en une technologie à vocation. Votre succès est le nôtre."
@@ -168,6 +188,16 @@
       "required": "Ce champ est obligatoire",
       "invalidEmail": "Email invalide",
       "passwordLength": "Le mot de passe doit contenir au moins 8 caractères"
+    },
+    "services": {
+      "header": "Nos Services",
+      "webDev": "Développement Web",
+      "mobileApps": "Applications Mobiles",
+      "aiSolutions": "Solutions IA",
+      "customSoftware": "Logiciel Sur Mesure",
+      "wdBody": "Nous créons des sites web attrayants et fonctionnels qui renforcent votre présence en ligne. Des landing pages aux plateformes complètes, notre approche est toujours centrée sur l'utilisateur.",
+      "maBody": "Nous développons des applications mobiles natives et hybrides qui offrent une expérience fluide et attrayante. Que ce soit pour iOS ou Android, nos apps sont conçues pour évoluer et s'adapter à vos besoins.",
+      "aiBody": "Nous implémentons des solutions d'intelligence artificielle qui optimisent les processus et améliorent la prise de décisions. Des chatbots à l'analyse prédictive, nous amenons votre entreprise au niveau supérieur avec une technologie avancée."
     }
   }
 }

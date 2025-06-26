@@ -21,6 +21,8 @@ export default function Home() {
   const listItems = t('home.listItems'); 
   const itemsArray = listItems.split('/');
 
+  console.log('itemsArray:', itemsArray);
+
   console.log('t(home.listItems):', listItems);
   console.log('itemsArray:', itemsArray);
   
@@ -35,9 +37,9 @@ export default function Home() {
       <Typography 
         variant="h2" 
         gutterBottom
-        color="text.primary"
-        sx={{ 
-          mb: 4,
+        sx={{
+          color: theme.palette.text.primary,
+          //m: 4,
           fontFamily: 'Poppins, sans-serif',
         }}
       >
@@ -47,10 +49,11 @@ export default function Home() {
       <Typography 
         variant="h4" 
         gutterBottom
-        color="text.primary"
         sx={{ 
-          mb: 4,
+          color: theme.palette.text.secondary,
+          m: 4,
           fontFamily: 'Birthstone, cursive',
+          fontSize: '3rem',
         }}
       >
         {t('home.title')}
@@ -66,8 +69,8 @@ export default function Home() {
           }}
         >
           <Typography 
-            color="text.secondary"
             sx={{ 
+              color: theme.palette.text.primary,
               mb: 4, 
               fontSize: '1.1rem',
               fontFamily: 'Inter, sans-serif',
@@ -82,7 +85,11 @@ export default function Home() {
         <Grid
           borderRadius={2} 
           size={{ xs: 12, md: 6 }} 
-          sx={{ backgroundColor: theme.palette.info.main }}>
+          sx={{ 
+            backgroundColor: theme.palette.info.main,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center', }}>
           <Box
             component="img"
             alt="imagen1"
@@ -99,7 +106,12 @@ export default function Home() {
         <Grid
           borderRadius={2}
           size={{ xs: 12, md: 6 }}
-          sx={{ backgroundColor: theme.palette.info.main }}
+          sx={{ 
+            backgroundColor: theme.palette.info.main,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
         >
           <Box
             component="img"
@@ -128,7 +140,7 @@ export default function Home() {
             variant="h5" 
             sx={{ 
               mb: 2, 
-              color: 'primary.main', 
+              color: theme.palette.text.primary, 
               fontWeight: 600,
               fontFamily: 'Poppins, sans-serif'
             }}
@@ -143,16 +155,16 @@ export default function Home() {
                 const lowerText = itemText.toLowerCase();
                 
                 if (lowerText.includes('landing')) {
-                  return <LaptopIcon sx={{ color: theme.palette.primary.main }} />;
+                  return <LaptopIcon sx={{ color: theme.palette.text.primary }} />;
                 }
                 if (lowerText.includes('app')) {
-                  return <PhoneAndroidIcon sx={{ color: theme.palette.primary.main }} />;
+                  return <PhoneAndroidIcon sx={{ color: theme.palette.text.primary }} />;
                 }
                 if (lowerText.includes('ia') || lowerText.includes('ai')) {
-                  return <PsychologyOutlinedIcon sx={{ color: theme.palette.primary.main }} />;
+                  return <PsychologyOutlinedIcon sx={{ color: theme.palette.text.primary }} />;
                 }
                 // Ícono por defecto (puedes elegir cuál mostrar por defecto)
-                return <CheckCircle sx={{ color: theme.palette.primary.main }} />;
+                return <CheckCircle sx={{ color: theme.palette.text.primary }} />;
               };
 
               return (
@@ -168,7 +180,7 @@ export default function Home() {
                     primary={
                       <Typography 
                         sx={{
-                          color: theme.palette.primary.main,
+                          color: theme.palette.text.primary,
                           fontFamily: 'Inter, sans-serif',
                           fontSize: '1.1rem'
                         }}
@@ -194,8 +206,9 @@ export default function Home() {
           <Typography 
             variant="h4" 
             gutterBottom
-            color="text.primary"
-            sx={{ 
+            sx={{
+              fontSize: '3rem',
+              color: theme.palette.text.secondary,
               mb: 4,
               mt: 4,
               fontFamily: 'Birthstone, cursive',
