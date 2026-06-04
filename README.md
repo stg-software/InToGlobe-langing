@@ -1,54 +1,168 @@
-# React + TypeScript + Vite
+# 🌐 InToGlobe – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page corporativa para **InToGlobe**, startup de seguridad inteligente. Construida con **React + Tailwind CSS + Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Inicio rápido
 
-## Expanding the ESLint configuration
+### Requisitos previos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Node.js](https://nodejs.org/) v18 o superior
+- npm v9 o superior (viene incluido con Node.js)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1. Instalar dependencias
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Modo desarrollo (con hot-reload)
+
+```bash
+npm run dev
+```
+
+Abre tu navegador en [http://localhost:5173](http://localhost:5173)
+
+### 3. Build de producción
+
+```bash
+npm run build
+```
+
+Los archivos generados quedan en la carpeta `dist/`.
+
+### 4. Previsualizar el build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+intoglobe/
+├── index.html                  # HTML base
+├── vite.config.js              # Configuración de Vite
+├── tailwind.config.js          # Configuración de Tailwind
+├── postcss.config.js
+├── package.json
+└── src/
+    ├── assets/                 # Imágenes y recursos estáticos
+    │   ├── logo.png            # (reemplaza con tu logo)
+    │   └── hero-image.png      # (reemplaza con tu imagen)
+    │
+    ├── components/
+    │   ├── Navbar.jsx          # Barra de navegación
+    │   ├── Hero.jsx            # Sección principal con brain orb
+    │   ├── Services.jsx        # Tarjetas de soluciones
+    │   ├── Stats.jsx           # Contadores animados
+    │   ├── CTA.jsx             # Sección de llamada a la acción
+    │   └── Footer.jsx          # Pie de página con badges
+    │
+    ├── pages/
+    │   └── Home.jsx            # Página principal (ensambla todos los componentes)
+    │
+    ├── data/
+    │   └── content.js          # ✏️ AQUÍ cambias todos los textos
+    │
+    ├── App.jsx                 # Raíz de la app
+    ├── main.jsx                # Punto de entrada
+    └── index.css               # Estilos globales + Tailwind
+```
+
+---
+
+## ✏️ Cómo cambiar los textos
+
+Todos los textos de la landing están centralizados en:
+
+```
+src/data/content.js
+```
+
+Edita este archivo para actualizar textos sin tocar los componentes:
 
 ```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+// Ejemplo: cambiar el titular principal
+export const hero = {
+  headline1: "Transformamos",
+  headline2: "seguridad en",
+  highlight: "inteligencia",   // ← Texto con degradado naranja/morado
+  description: "Tu descripción aquí...",
+  ctaPrimary: "Solicitar demo",
+  ctaSecondary: "Conocer más",
+};
 ```
+
+---
+
+## 🎨 Personalización de colores
+
+Los colores de marca están en `tailwind.config.js`:
+
+```js
+colors: {
+  brand: {
+    orange: '#F97316',       // Naranja principal
+    purple: '#7C3AED',       // Morado principal
+    'purple-light': '#A78BFA',
+    dark: '#1E1B4B',
+  }
+}
+```
+
+---
+
+## 🖼️ Agregar imágenes propias
+
+Coloca tus imágenes en `src/assets/` y luego impórtalas en el componente correspondiente:
+
+```jsx
+import logoImg from "../assets/logo.png";
+
+// En el JSX:
+<img src={logoImg} alt="InToGlobe" />
+```
+
+---
+
+## 📦 Dependencias principales
+
+| Paquete | Versión | Uso |
+|---|---|---|
+| react | ^18.3 | UI framework |
+| vite | ^5.4 | Build tool |
+| tailwindcss | ^3.4 | Estilos utilitarios |
+| lucide-react | ^0.383 | Iconos SVG |
+
+---
+
+## 🌐 Deploy
+
+### Vercel (recomendado)
+```bash
+npm install -g vercel
+vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Sube la carpeta dist/ a Netlify
+```
+
+### GitHub Pages
+```bash
+npm run build
+# Configura la carpeta dist/ como raíz del sitio
+```
+
+---
+
+## 📄 Licencia
+
+MIT – Libre para uso comercial y personal.
