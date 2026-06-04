@@ -78,8 +78,8 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3 font-body text-sm text-gray-500">
               <li>📧 contacto@intoglobe.com</li>
-              <li>📱 +52 (773) 240-2090</li>
-              <li>📱 +52 (951) 123-0180</li>
+              <li>📱 +52 (77) 3240-2090</li>
+              <li>📱 +52 (95) 1123-0180</li>
               <li>📍 México</li>
             </ul>
 

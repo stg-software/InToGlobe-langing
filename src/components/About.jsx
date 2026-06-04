@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Lightbulb, Cpu, Rocket } from "lucide-react";
 import { about } from "../data/content";
-import logoImg from "../assets/logo.jpg";
+import { BrainOrb } from "./Hero";
 
 const pillars = [
   { icon: Lightbulb, label: "Think",     color: "#C07022", desc: "Analizamos tus necesidades y diseñamos la estrategia correcta." },
@@ -28,29 +28,16 @@ export default function About() {
   }, []);
 
   return (
-    <section id="nosotros" ref={sectionRef} className="py-24 bg-white">
+    <section id="nosotros" ref={sectionRef} className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* ── Left: logo + decoración ── */}
+          {/* ── LEFT: Brain Orb animado ── */}
           <div className="reveal flex justify-center">
-            <div className="relative">
-              {/* Glow */}
-              <div className="absolute inset-0 rounded-3xl blur-3xl"
-                style={{ background: 'radial-gradient(ellipse, rgba(123,45,139,0.12) 0%, transparent 70%)' }} />
-              {/* Logo */}
-              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-3xl overflow-hidden shadow-2xl border border-purple-100">
-                <img src={logoImg} alt="InToGlobe" className="w-full h-full object-contain p-6 bg-white" />
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl px-5 py-3 shadow-xl border border-purple-50">
-                <p className="font-display text-xs font-bold tracking-widest uppercase"
-                  style={{ color: '#7B2D8B' }}>Think · Create · Transform</p>
-              </div>
-            </div>
+            <BrainOrb />
           </div>
 
-          {/* ── Right: text ── */}
+          {/* ── RIGHT: Texto ── */}
           <div>
             <div className="reveal mb-3">
               <span className="text-sm font-body font-semibold uppercase tracking-widest"
@@ -65,7 +52,6 @@ export default function About() {
               {about.description}
             </p>
 
-            {/* Pillars */}
             <div className="reveal flex flex-col gap-5">
               {pillars.map(({ icon: Icon, label, color, desc }) => (
                 <div key={label} className="flex items-start gap-4">
@@ -74,15 +60,14 @@ export default function About() {
                     <Icon size={20} style={{ color }} />
                   </div>
                   <div>
-                    <p className="font-display font-semibold text-gray-900 mb-0.5" style={{ color }}>
-                      {label}
-                    </p>
+                    <p className="font-display font-semibold mb-0.5" style={{ color }}>{label}</p>
                     <p className="font-body text-sm text-gray-500">{desc}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>
