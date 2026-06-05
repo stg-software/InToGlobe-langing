@@ -12,6 +12,10 @@
     @apply text-gray-800 bg-white;
   }
 
+  .dark body {
+    @apply text-gray-100 bg-gray-950;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Sora', sans-serif;
   }
@@ -36,6 +40,11 @@
   .hero-gradient {
     background: radial-gradient(ellipse at 70% 50%, rgba(167, 139, 250, 0.15) 0%, transparent 60%),
                 radial-gradient(ellipse at 30% 80%, rgba(249, 115, 22, 0.08) 0%, transparent 50%);
+  }
+
+  .dark .hero-gradient {
+    background: radial-gradient(ellipse at 70% 50%, rgba(109, 40, 217, 0.2) 0%, transparent 60%),
+                radial-gradient(ellipse at 30% 80%, rgba(234, 88, 12, 0.1) 0%, transparent 50%);
   }
 
   .card-shadow {

@@ -9,9 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/birthstone": "^5.2.8",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/poppins": "^5.2.7",
+    "@mui/icons-material": "^9.0.1",
+    "@mui/material": "^9.0.1",
+    "i18next": "^26.3.1",
+    "lucide-react": "^0.383.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "lucide-react": "^0.383.0"
+    "react-i18next": "^17.0.8",
+    "react-router-dom": "^7.17.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",

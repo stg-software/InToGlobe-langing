@@ -3,10 +3,9 @@ import LanguageIcon from '@mui/icons-material/Language';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { useThemeContext } from '../../context/ThemeContext';
-import logo from '../../assets/logo2.svg';
-import { useTranslation } from '../../hooks/useTranslation'; // Usa tu hook personalizado
+import logo from '../../assets/logo1.svg';
+import { useTranslation } from '../../hooks/useTranslation';
 import React from 'react';
-import headerBg from '../../assets/header/Header1.jpg';
 import { alpha } from '@mui/material/styles';
 import type { Language } from '../../context/LanguageContext';
 import { Link as RouterLink } from 'react-router-dom';
@@ -20,9 +19,7 @@ export default function Header() {
   const { toggleColorMode } = useThemeContext();
   const [open, setOpen] = React.useState(false);
   const langMenue = React.useRef<HTMLButtonElement | null>(null);
-  
-  //const { t, i18n } = useTranslation();
-  
+
   const langMenuToggler = () => {
     setOpen((prevOpen) => !prevOpen);
   };
@@ -58,26 +55,7 @@ export default function Header() {
   }
 
   return (
-    <Box
-      height={'45vh'}
-      position="relative" // Añade esto
-      overflow="hidden" // Oculta cualquier parte que sobresalga
-    > 
-      <Box
-        component="img"
-        alt="bg image"
-        sx={{
-          position: 'absolute', // Posiciona absolutamente respecto al contenedor padre
-          top: -10,
-          width: '100%',
-          minWidth: '650px',
-          //objectFit: 'cover', // Cubre el área manteniendo la relación de aspecto
-          zIndex: 0, // Coloca detrás de todo
-          borderRadius: theme.shape.borderRadius,
-        }}
-        src={headerBg}
-      />
-      
+    <Box position="relative" overflow="hidden">
       <AppBar
         position="static"
         sx={{
@@ -85,12 +63,11 @@ export default function Header() {
           width: '95%',
           borderRadius: 2,
           marginTop: 2,
-          marginLeft: "auto",
-          marginRight: "auto",
+          marginLeft: 'auto',
+          marginRight: 'auto',
           boxShadow: theme.shadows[4],
           transition: 'all 0.3s ease',
-          backgroundColor: alpha(theme.palette.primary.main, 0.6),
-          position: 'relative',
+          backgroundColor: alpha(theme.palette.primary.main, 0.9),
         }}
       >
         <Toolbar
@@ -99,28 +76,23 @@ export default function Header() {
             justifyContent: 'space-between',
             alignItems: 'center',
             height: '100%',
-            minHeight: '100% !important', // Fuerza el alto al 100%
+            minHeight: '100% !important',
           }}
         >
-          <Box 
+          <Box
             component="img"
             src={logo}
-            alt="Logo"
+            alt="InToGlobe Logo"
             sx={{
               backgroundColor: '#e8d5b5',
               height: 40,
               borderRadius: 2,
               pl: 1,
               pr: 1,
-              display: 'flex',
-              alignItems: 'center', // Centrado vertical adicional
-              // filter: theme.palette.mode === 'dark' ? 'brightness(0) invert(1)' : 'none'
             }}
           />
-          
-          <Box sx={{ 
-            display: 'flex', 
-            gap: 2,}}>
+
+          <Box sx={{ display: 'flex', gap: 2 }}>
             <Button
               component={RouterLink}
               to="/"
@@ -152,15 +124,15 @@ export default function Header() {
           </Box>
 
           <Box>
-            <IconButton 
-              color="inherit" 
+            <IconButton
+              color="inherit"
               ref={langMenue}
               id="language-button"
               aria-controls={open ? 'composition-menu' : undefined}
               aria-expanded={open ? 'true' : undefined}
               aria-haspopup="true"
-              onClick={langMenuToggler}>
-
+              onClick={langMenuToggler}
+            >
               <LanguageIcon />
             </IconButton>
             <Popper
@@ -187,19 +159,13 @@ export default function Header() {
                         aria-labelledby="composition-button"
                         onKeyDown={handleListKeyDown}
                       >
-                        <MenuItem 
-                          onClick={(event) => langMenueClose(event, 'es')}
-                        >
+                        <MenuItem onClick={(event) => langMenueClose(event, 'es')}>
                           Español
                         </MenuItem>
-                        <MenuItem 
-                          onClick={(event) => langMenueClose(event, 'en')}
-                        >
+                        <MenuItem onClick={(event) => langMenueClose(event, 'en')}>
                           English
                         </MenuItem>
-                        <MenuItem 
-                          onClick={(event) => langMenueClose(event,'fr')}
-                        >
+                        <MenuItem onClick={(event) => langMenueClose(event, 'fr')}>
                           Français
                         </MenuItem>
                       </MenuList>
@@ -212,10 +178,8 @@ export default function Header() {
               {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
           </Box>
-          
         </Toolbar>
       </AppBar>
     </Box>
-    
   );
 }

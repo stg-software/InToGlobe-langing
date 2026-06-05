@@ -1,48 +1,35 @@
-import { cta } from "../data/content";
+import { useTranslation } from "react-i18next";
 
 export default function CTA() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative py-28 overflow-hidden">
-      {/* Dark background with earth image simulation */}
       <div className="absolute inset-0 bg-gray-950" />
-
-      {/* Glowing orbs */}
       <div className="absolute inset-0">
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full bg-brand-orange/10 blur-3xl" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-brand-purple/20 blur-3xl" />
       </div>
-
-      {/* Earth visual */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-30 pointer-events-none">
         <div className="w-full h-full rounded-full border border-orange-500/20 relative overflow-hidden">
           <div className="absolute inset-0 rounded-full bg-gradient-to-tl from-orange-500/30 via-transparent to-purple-900/30" />
-          {/* Fake city lights dots */}
           {[...Array(40)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 rounded-full bg-orange-300"
-              style={{
-                left: `${15 + Math.random() * 70}%`,
-                top: `${15 + Math.random() * 70}%`,
-                opacity: 0.4 + Math.random() * 0.6,
-              }}
-            />
+            <div key={i} className="absolute w-1 h-1 rounded-full bg-orange-300"
+              style={{ left: `${15 + Math.random() * 70}%`, top: `${15 + Math.random() * 70}%`, opacity: 0.4 + Math.random() * 0.6 }} />
           ))}
         </div>
       </div>
-
-      {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-xl">
           <h2 className="font-display text-3xl lg:text-5xl font-extrabold text-white leading-tight mb-5">
-            {cta.headline1}{" "}
-            <span className="text-brand-orange">{cta.headline2}</span>
+            {t("cta.headline1")}{" "}
+            <span className="text-brand-orange">{t("cta.headline2")}</span>
           </h2>
           <p className="font-body text-gray-400 text-lg mb-10">
-            {cta.description}
+            {t("cta.description")}
           </p>
           <button className="gradient-orange text-white font-display font-semibold px-8 py-3.5 rounded-full shadow-xl shadow-orange-900/30 hover:shadow-orange-800/40 hover:scale-105 transition-all duration-200 text-base">
-            {cta.button}
+            {t("cta.button")}
           </button>
         </div>
       </div>

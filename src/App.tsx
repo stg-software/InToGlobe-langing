@@ -4,18 +4,14 @@ import Home from './pages/Home';
 import Nosotros from './pages/About';
 import Servicios from './pages/Services';
 import Contacto from './pages/Contact';
-import { useThemeContext } from './context/ThemeContext';
 import { CssBaseline } from '@mui/material';
 import '@fontsource/birthstone/400.css';
-import '@fontsource/inter/300.css'; // body
-import '@fontsource/poppins/400.css'; // headers
+import '@fontsource/inter/300.css';
+import '@fontsource/poppins/400.css';
 
 function App() {
-  useThemeContext();
-
   return (
     <BrowserRouter>
-      {/* CssBaseline resetea los estilos y aplica el tema global */}
       <CssBaseline />
       <DefaultContainer>
         <Routes>

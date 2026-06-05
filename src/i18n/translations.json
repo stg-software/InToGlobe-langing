@@ -1,203 +1,140 @@
 {
   "es": {
-    "common": {
-      "welcome": "Bienvenid@",
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "password": "Contraseña",
-      "confirmPassword": "Confirmar contraseña",
-      "submit": "Enviar",
-      "cancel": "Cancelar",
-      "login": "Iniciar sesión",
-      "logout": "Cerrar sesión",
-      "register": "Registrarse",
-      "forgotPassword": "¿Olvidaste tu contraseña?"
+    "navbar": {
+      "links": ["Inicio", "Soluciones", "Tecnología", "Nosotros", "Contacto"],
+      "cta": "Solicitar demo"
     },
-    "home": {
-      "header": "Bienvenido a InToGlobe",
-      "title": "Transformamos tus ideas en realidades digitales",
-      "p1Body": "En InToGlobe, creamos software a medida para impulsar tu negocio. Desde landing pages impactantes hasta aplicaciones con IA, nuestro equipo convierte tus desafíos en soluciones tecnológicas.",
-      "listTitle": "Te ofrecemos:",
-      "listItems": "Landing Pages que captan leads y aumentan ventas./Apps Web y Móviles intuitivas y escalables./Soluciones con IA para automatizar y optimizar procesos.",
-      "p2Body": "No solo desarrollamos código, construimos experiencias que marcan la diferencia."
-    },
-    "contact": {
-      "btnSubtext": "¿Listo para empezar?",
-      "btnText": "Contáctanos",
-      "header": "Contáctanos",
-      "p1body": "Hagamos crecer tu proyecto juntos.",
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "message": "Mensaje",
-      "submit": "Enviar",
-      "successMessage": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
-      "errorMessage": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
-      "listTitle": "¿Qué tipo de proyecto tienes en mente?",
-      "contactList": "Landing Pages/Aplicaciones Web/Aplicaciones Móviles/No estoy seguro"
-    },
-    "about": {
-      "header1": "¿Quiénes somos?",
-      "p1body": "En InToGlobe, somos más que una empresa de desarrollo de software: somos tu aliado tecnológico. Combinamos expertise técnico con creatividad para ofrecer soluciones que generan valor real.",
-      "header2": "Nuestra historia",
-      "p2body": "Nacimos hace más de 10 años con la visión de simplificar la tecnología para empresas, sin importar su tamaño. Hoy, nuestro portafolio abarca desde startups hasta corporaciones, siempre con un enfoque personalizado.",
-      "aboutListTitle": "¿Por qué elegirnos?",
-      "aboutList": "Equipo especializado: Developers, diseñadores y expertos en IA trabajando en sinergia./Metodologías ágiles: Entregas rápidas y adaptables a tus necesidades./Soporte 360: Acompañamiento desde el concepto hasta el lanzamiento y más allá.",
-      "p3body": "Creemos en la tecnología con propósito. Tu éxito es el nuestro."  
-    },
-    "navigation": {
-      "home": "Inicio",
-      "about": "Nosotros",
-      "services": "Servicios",
-      "contact": "Contacto"
-    },
-    "errors": {
-      "required": "Este campo es requerido",
-      "invalidEmail": "Correo electrónico no válido",
-      "passwordLength": "La contraseña debe tener al menos 8 caracteres"
+    "hero": {
+      "headline1": "Transformamos",
+      "headline2": "seguridad en",
+      "highlight": "inteligencia",
+      "badge": "Think · Create · Transform",
+      "description": "Desarrollamos soluciones de control de acceso, automatización y software que impulsan empresas hacia el futuro.",
+      "ctaPrimary": "Solicitar demo",
+      "ctaSecondary": "Conocer más"
     },
     "services": {
-      "header": "Nuestros Servicios",
-      "webDev": "Desarrollo Web",
-      "mobileApps": "Aplicaciones Móviles",
-      "aiSolutions": "Soluciones de IA",
-      "customSoftware": "Software a Medida",
-      "wdBody": "Creamos sitios web atractivos y funcionales que impulsan tu presencia en línea. Desde landing pages hasta plataformas completas, nuestro enfoque es siempre centrado en el usuario.",
-      "maBody": "Desarrollamos aplicaciones móviles nativas e híbridas que ofrecen una experiencia fluida y atractiva. Ya sea para iOS o Android, nuestras apps están diseñadas para escalar y adaptarse a tus necesidades.",
-      "aiBody": "Implementamos soluciones de inteligencia artificial que optimizan procesos y mejoran la toma de decisiones. Desde chatbots hasta análisis predictivo, llevamos tu negocio al siguiente nivel con tecnología avanzada."
+      "sectionTitle": "Nuestras soluciones",
+      "items": [
+        { "title": "Control de Acceso", "description": "Soluciones robustas para gestionar quién entra y cuándo." },
+        { "title": "Biometría Inteligente", "description": "Reconocimiento facial, huella, RFID y más tecnologías." },
+        { "title": "Automatización e IoT", "description": "Conecta dispositivos y automatiza procesos de forma inteligente." },
+        { "title": "Desarrollo de Software", "description": "Sistemas a la medida para optimizar tu operación." },
+        { "title": "Analítica y Reportes", "description": "Toma decisiones basadas en datos en tiempo real." }
+      ]
+    },
+    "stats": {
+      "sectionTitle": "Tecnología que se adapta a ti",
+      "labels": ["Proyectos\ncompletados", "Empresas\nconfían en nosotros", "Satisfacción\nde clientes", "Soporte técnico\nespecializado"]
+    },
+    "about": {
+      "sectionTitle": "Nosotros",
+      "description": "En InToGlobe, creamos software a medida para impulsar tu negocio. Desde landing pages impactantes hasta aplicaciones con IA, nuestro equipo convierte tus desafíos en soluciones tecnológicas.",
+      "tagline": "Think · Create · Transform"
+    },
+    "cta": {
+      "headline1": "Un mundo de posibilidades",
+      "headline2": "conectado por la tecnología",
+      "description": "Soluciones innovadoras para un mundo en constante evolución.",
+      "button": "Conocer soluciones"
+    },
+    "footer": {
+      "tagline": "Think · Create · Transform",
+      "description": "Transformamos tus desafíos en soluciones tecnológicas de alto impacto.",
+      "copyright": "© 2025 InToGlobe. Todos los derechos reservados.",
+      "badges": ["Seguridad avanzada", "Integración sin límites", "Escalabilidad total", "Innovación constante"]
     }
   },
   "en": {
-    "common": {
-      "welcome": "Welcome",
-      "name": "Name",
-      "email": "Email",
-      "password": "Password",
-      "confirmPassword": "Confirm password",
-      "submit": "Submit",
-      "cancel": "Cancel",
-      "login": "Login",
-      "logout": "Logout",
-      "register": "Register",
-      "forgotPassword": "Forgot password?"
+    "navbar": {
+      "links": ["Home", "Solutions", "Technology", "About", "Contact"],
+      "cta": "Request demo"
     },
-    "home": {
-      "header": "Welcome to InToGlobe",
-      "title": "We transform your ideas into digital realities",
-      "p1Body": "At InToGlobe, we create custom software to boost your business. From impactful landing pages to AI applications, our team turns your challenges into technological solutions.",
-      "listTitle": "We offer:",
-      "listItems": "Landing Pages that capture leads and increase sales./Intuitive and scalable Web and Mobile Apps./AI solutions to automate and optimize processes.",
-      "p2Body": "We don't just develop code, we build experiences that make a difference."
-    },
-    "contact": {
-      "btnSubtext": "Ready to start?",
-      "btnText": "Contact us",
-      "header": "Contact us",
-      "p1body": "Let's grow your project together.",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Submit",
-      "successMessage": "Thank you for your message! We'll contact you soon.",
-      "errorMessage": "There was an error sending your message. Please try again later.",
-      "listTitle": "What kind of project do you have in mind?",
-      "contactList": "Landing Pages/Web Applications/Mobile Applications/I'm not sure"
-    },
-    "about": {
-      "header1": "Who we are?",
-      "p1body": "At InToGlobe, we're more than a software development company: we're your technology ally. We combine technical expertise with creativity to deliver solutions that generate real value.",
-      "header2": "Our story",
-      "p2body": "We were born more than 10 years ago with the vision of simplifying technology for businesses, regardless of their size. Today, our portfolio ranges from startups to corporations, always with a personalized approach.",
-      "aboutListTitle": "Why choose us?",
-      "aboutList": "Specialized team: Developers, designers and AI experts working in synergy./Agile methodologies: Fast deliveries adaptable to your needs./360 support: Guidance from concept to launch and beyond.",
-      "p3body": "We believe in purposeful technology. Your success is ours."
-    },
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "contact": "Contact"
-    },
-    "errors": {
-      "required": "This field is required",
-      "invalidEmail": "Invalid email",
-      "passwordLength": "Password must be at least 8 characters"
+    "hero": {
+      "headline1": "We transform",
+      "headline2": "security into",
+      "highlight": "intelligence",
+      "badge": "Think · Create · Transform",
+      "description": "We develop access control, automation and software solutions that drive businesses into the future.",
+      "ctaPrimary": "Request demo",
+      "ctaSecondary": "Learn more"
     },
     "services": {
-      "header": "Our Services",
-      "webDev": "Web Development",
-      "mobileApps": "Mobile Applications",
-      "aiSolutions": "AI Solutions",
-      "customSoftware": "Custom Software",
-      "wdBody": "We create attractive and functional websites that boost your online presence. From landing pages to complete platforms, our approach is always user-centered.",
-      "maBody": "We develop native and hybrid mobile applications that offer a smooth and engaging experience. Whether for iOS or Android, our apps are designed to scale and adapt to your needs.",
-      "aiBody": "We implement artificial intelligence solutions that optimize processes and improve decision making. From chatbots to predictive analytics, we take your business to the next level with advanced technology."
+      "sectionTitle": "Our solutions",
+      "items": [
+        { "title": "Access Control", "description": "Robust solutions to manage who enters and when." },
+        { "title": "Smart Biometrics", "description": "Facial recognition, fingerprint, RFID and more technologies." },
+        { "title": "Automation & IoT", "description": "Connect devices and automate processes intelligently." },
+        { "title": "Software Development", "description": "Custom systems to optimize your operation." },
+        { "title": "Analytics & Reports", "description": "Make decisions based on real-time data." }
+      ]
+    },
+    "stats": {
+      "sectionTitle": "Technology that adapts to you",
+      "labels": ["Projects\ncompleted", "Companies\ntrust us", "Customer\nsatisfaction", "Technical support\nspecialized"]
+    },
+    "about": {
+      "sectionTitle": "About us",
+      "description": "At InToGlobe, we create custom software to boost your business. From impactful landing pages to AI applications, our team turns your challenges into technological solutions.",
+      "tagline": "Think · Create · Transform"
+    },
+    "cta": {
+      "headline1": "A world of possibilities",
+      "headline2": "connected by technology",
+      "description": "Innovative solutions for a constantly evolving world.",
+      "button": "Explore solutions"
+    },
+    "footer": {
+      "tagline": "Think · Create · Transform",
+      "description": "We transform your challenges into high-impact technological solutions.",
+      "copyright": "© 2025 InToGlobe. All rights reserved.",
+      "badges": ["Advanced security", "Seamless integration", "Total scalability", "Constant innovation"]
     }
   },
   "fr": {
-    "common": {
-      "welcome": "Bienvenue",
-      "name": "Nom",
-      "email": "Email",
-      "password": "Mot de passe",
-      "confirmPassword": "Confirmer le mot de passe",
-      "submit": "Soumettre",
-      "cancel": "Annuler",
-      "login": "Connexion",
-      "logout": "Déconnexion",
-      "register": "S'inscrire",
-      "forgotPassword": "Mot de passe oublié?"
+    "navbar": {
+      "links": ["Accueil", "Solutions", "Technologie", "À propos", "Contact"],
+      "cta": "Demander une démo"
     },
-    "home": {
-      "header": "Bienvenue chez InToGlobe",
-      "title": "Nous transformons vos idées en réalités numériques",
-      "p1Body": "Chez InToGlobe, nous créons des logiciels sur mesure pour booster votre entreprise. Des landing pages percutantes aux applications IA, notre équipe transforme vos défis en solutions technologiques.",
-      "listTitle": "Nous proposons:",
-      "listItems": "Des Landing Pages qui captent des prospects et augmentent les ventes./Des Apps Web et Mobiles intuitives et évolutives./Des solutions IA pour automatiser et optimiser les processus.",
-      "p2Body": "Nous ne développons pas seulement du code, nous créons des expériences qui font la différence."
-    },
-    "contact": {
-      "btnSubtext": "Prêt à commencer?",
-      "btnText": "Contactez-nous",
-      "header": "Contactez-nous",
-      "p1body": "Faisons grandir votre projet ensemble.",
-      "name": "Nom",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Envoyer",
-      "successMessage": "Merci pour votre message! Nous vous contacterons bientôt.",
-      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
-      "listTitle": "Quel type de projet avez-vous en tête?",
-      "contactList": "Landing Pages/Applications Web/Applications Mobiles/Je ne suis pas sûr"
-    },
-    "about": {
-      "header1": "Qui sommes-nous?",
-      "p1body": "Chez InToGlobe, nous sommes plus qu'une entreprise de développement logiciel: nous sommes votre allié technologique. Nous combinons expertise technique et créativité pour fournir des solutions qui créent de la valeur réelle.",
-      "header2": "Notre histoire",
-      "p2body": "Nous sommes nés il y a plus de 10 ans avec la vision de simplifier la technologie pour les entreprises, quelle que soit leur taille. Aujourd'hui, notre portfolio va des startups aux grandes entreprises, toujours avec une approche personnalisée.",
-      "aboutListTitle": "Pourquoi nous choisir?",
-      "aboutList": "Équipe spécialisée: Développeurs, designers et experts en IA travaillant en synergie./Méthodologies agiles: Livraisons rapides adaptées à vos besoins./Support 360°: Accompagnement du concept au lancement et au-delà.",
-      "p3body": "Nous croyons en une technologie à vocation. Votre succès est le nôtre."
-    },
-    "navigation": {
-      "home": "Accueil",
-      "about": "À propos",
-      "services": "Services",
-      "contact": "Contact"
-    },
-    "errors": {
-      "required": "Ce champ est obligatoire",
-      "invalidEmail": "Email invalide",
-      "passwordLength": "Le mot de passe doit contenir au moins 8 caractères"
+    "hero": {
+      "headline1": "Nous transformons",
+      "headline2": "la sécurité en",
+      "highlight": "intelligence",
+      "badge": "Think · Create · Transform",
+      "description": "Nous développons des solutions de contrôle d'accès, d'automatisation et de logiciels qui propulsent les entreprises vers l'avenir.",
+      "ctaPrimary": "Demander une démo",
+      "ctaSecondary": "En savoir plus"
     },
     "services": {
-      "header": "Nos Services",
-      "webDev": "Développement Web",
-      "mobileApps": "Applications Mobiles",
-      "aiSolutions": "Solutions IA",
-      "customSoftware": "Logiciel Sur Mesure",
-      "wdBody": "Nous créons des sites web attrayants et fonctionnels qui renforcent votre présence en ligne. Des landing pages aux plateformes complètes, notre approche est toujours centrée sur l'utilisateur.",
-      "maBody": "Nous développons des applications mobiles natives et hybrides qui offrent une expérience fluide et attrayante. Que ce soit pour iOS ou Android, nos apps sont conçues pour évoluer et s'adapter à vos besoins.",
-      "aiBody": "Nous implémentons des solutions d'intelligence artificielle qui optimisent les processus et améliorent la prise de décisions. Des chatbots à l'analyse prédictive, nous amenons votre entreprise au niveau supérieur avec une technologie avancée."
+      "sectionTitle": "Nos solutions",
+      "items": [
+        { "title": "Contrôle d'accès", "description": "Des solutions robustes pour gérer qui entre et quand." },
+        { "title": "Biométrie intelligente", "description": "Reconnaissance faciale, empreinte, RFID et plus encore." },
+        { "title": "Automatisation & IoT", "description": "Connectez des appareils et automatisez les processus intelligemment." },
+        { "title": "Développement logiciel", "description": "Systèmes sur mesure pour optimiser votre opération." },
+        { "title": "Analytique & Rapports", "description": "Prenez des décisions basées sur des données en temps réel." }
+      ]
+    },
+    "stats": {
+      "sectionTitle": "Une technologie qui s'adapte à vous",
+      "labels": ["Projets\ncompletés", "Entreprises\nqui nous font confiance", "Satisfaction\nclient", "Support technique\nspécialisé"]
+    },
+    "about": {
+      "sectionTitle": "À propos",
+      "description": "Chez InToGlobe, nous créons des logiciels sur mesure pour booster votre entreprise. Des landing pages percutantes aux applications IA, notre équipe transforme vos défis en solutions technologiques.",
+      "tagline": "Think · Create · Transform"
+    },
+    "cta": {
+      "headline1": "Un monde de possibilités",
+      "headline2": "connecté par la technologie",
+      "description": "Des solutions innovantes pour un monde en constante évolution.",
+      "button": "Découvrir les solutions"
+    },
+    "footer": {
+      "tagline": "Think · Create · Transform",
+      "description": "Nous transformons vos défis en solutions technologiques à fort impact.",
+      "copyright": "© 2025 InToGlobe. Tous droits réservés.",
+      "badges": ["Sécurité avancée", "Intégration sans limites", "Évolutivité totale", "Innovation constante"]
     }
   }
 }
