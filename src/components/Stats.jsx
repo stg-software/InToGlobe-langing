@@ -33,10 +33,15 @@ function StatItem({ value, prefix, suffix, label }) {
   }, []);
 
   const displayValue = typeof value === "number" ? `${prefix}${count}${suffix}` : value;
+  const finalValue   = typeof value === "number" ? `${prefix}${value}${suffix}` : value;
 
   return (
     <div ref={ref} className="text-center group">
-      <div className="font-display text-5xl lg:text-6xl font-extrabold gradient-text mb-2 tabular-nums">
+      <div
+        className="font-display text-5xl lg:text-6xl font-extrabold gradient-text mb-2 tabular-nums"
+        aria-label={finalValue}
+        aria-live="polite"
+      >
         {displayValue}
       </div>
       <p className="font-body text-gray-500 dark:text-gray-400 text-sm leading-snug whitespace-pre-line">
@@ -57,25 +62,26 @@ export default function Stats() {
   ];
 
   return (
-    <section id="tecnología" className="py-24 bg-white dark:bg-gray-900">
+    <section id="tecnología" aria-labelledby="stats-heading" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+          <h2 id="stats-heading" className="font-display text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3">
             {t("stats.sectionTitle")}
           </h2>
-          <div className="w-12 h-1 rounded-full gradient-purple mx-auto" />
+          <div className="w-12 h-1 rounded-full gradient-purple mx-auto" aria-hidden="true" />
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4">
+        <dl className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4">
           {values.map((item, i) => (
-            <StatItem
-              key={i}
-              value={item.value}
-              prefix={item.prefix}
-              suffix={item.suffix}
-              label={Array.isArray(labels) ? labels[i] : ""}
-            />
+            <div key={i} className="text-center">
+              <StatItem
+                value={item.value}
+                prefix={item.prefix}
+                suffix={item.suffix}
+                label={Array.isArray(labels) ? labels[i] : ""}
+              />
+            </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );

@@ -8,11 +8,11 @@ const iconKeys = ["Shield", "Fingerprint", "Cpu", "Code2", "BarChart3"];
 function ServiceCard({ title, description, iconKey, index }) {
   const Icon = iconMap[iconKey] || Shield;
   return (
-    <div
+    <article
       className="reveal group flex flex-col items-center text-center p-6 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all duration-300"
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div className="relative mb-5">
+      <div className="relative mb-5" aria-hidden="true">
         <div className="w-16 h-16 rounded-2xl bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center group-hover:bg-purple-100 dark:group-hover:bg-purple-900/50 transition-colors duration-300">
           <Icon size={28} className="text-brand-purple" strokeWidth={1.5} />
         </div>
@@ -24,7 +24,7 @@ function ServiceCard({ title, description, iconKey, index }) {
       <p className="font-body text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
         {description}
       </p>
-    </div>
+    </article>
   );
 }
 
@@ -49,13 +49,13 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="soluciones" ref={sectionRef} className="py-24 bg-gray-50/60 dark:bg-gray-950">
+    <section id="soluciones" ref={sectionRef} aria-labelledby="services-heading" className="py-24 bg-gray-50/60 dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="reveal text-center mb-14">
-          <h2 className="font-display text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+          <h2 id="services-heading" className="font-display text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3">
             {t("services.sectionTitle")}
           </h2>
-          <div className="w-12 h-1 rounded-full gradient-purple mx-auto" />
+          <div className="w-12 h-1 rounded-full gradient-purple mx-auto" aria-hidden="true" />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {Array.isArray(items) && items.map((item, i) => (

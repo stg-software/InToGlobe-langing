@@ -13,4 +13,12 @@ i18n.use(initReactI18next).init({
   interpolation: { escapeValue: false },
 });
 
+// Actualiza <html lang=""> al cambiar idioma
+i18n.on('languageChanged', (lng) => {
+  document.documentElement.lang = lng;
+});
+
+// Aplica el idioma inicial
+document.documentElement.lang = i18n.language;
+
 export default i18n;

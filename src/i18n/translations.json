@@ -43,6 +43,40 @@
       "description": "Transformamos tus desafíos en soluciones tecnológicas de alto impacto.",
       "copyright": "© 2025 InToGlobe. Todos los derechos reservados.",
       "badges": ["Seguridad avanzada", "Integración sin límites", "Escalabilidad total", "Innovación constante"]
+    },
+    "contact": {
+      "eyebrow": "Hablemos",
+      "title": "¿Listo para transformar tu empresa?",
+      "subtitle": "Cuéntanos tu proyecto y te contactamos en menos de 24 horas.",
+      "infoTitle": "Información de contacto",
+      "cardTitle": "Respuesta garantizada",
+      "cardBody": "Nuestro equipo responde todas las solicitudes en un máximo de 24 horas hábiles.",
+      "fields": {
+        "name": "Nombre",
+        "company": "Empresa",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "message": "Mensaje"
+      },
+      "placeholders": {
+        "name": "Tu nombre completo",
+        "company": "Nombre de tu empresa",
+        "email": "tu@correo.com",
+        "phone": "+52 (000) 000-0000",
+        "message": "Cuéntanos sobre tu proyecto o necesidad..."
+      },
+      "errors": {
+        "name": "El nombre es obligatorio",
+        "email": "El correo es obligatorio",
+        "emailInvalid": "Ingresa un correo válido",
+        "message": "El mensaje es obligatorio"
+      },
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successTitle": "¡Mensaje enviado!",
+      "successBody": "Gracias por contactarnos. Te responderemos pronto.",
+      "sendAnother": "Enviar otro mensaje",
+      "errorMsg": "Ocurrió un error al enviar. Por favor intenta de nuevo."
     }
   },
   "en": {
@@ -89,6 +123,40 @@
       "description": "We transform your challenges into high-impact technological solutions.",
       "copyright": "© 2025 InToGlobe. All rights reserved.",
       "badges": ["Advanced security", "Seamless integration", "Total scalability", "Constant innovation"]
+    },
+    "contact": {
+      "eyebrow": "Let's talk",
+      "title": "Ready to transform your business?",
+      "subtitle": "Tell us about your project and we'll get back to you within 24 hours.",
+      "infoTitle": "Contact information",
+      "cardTitle": "Guaranteed response",
+      "cardBody": "Our team responds to all inquiries within a maximum of 24 business hours.",
+      "fields": {
+        "name": "Name",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "company": "Your company name",
+        "email": "you@email.com",
+        "phone": "+1 (000) 000-0000",
+        "message": "Tell us about your project or need..."
+      },
+      "errors": {
+        "name": "Name is required",
+        "email": "Email is required",
+        "emailInvalid": "Please enter a valid email",
+        "message": "Message is required"
+      },
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successTitle": "Message sent!",
+      "successBody": "Thank you for contacting us. We'll reply shortly.",
+      "sendAnother": "Send another message",
+      "errorMsg": "An error occurred while sending. Please try again."
     }
   },
   "fr": {
@@ -135,6 +203,40 @@
       "description": "Nous transformons vos défis en solutions technologiques à fort impact.",
       "copyright": "© 2025 InToGlobe. Tous droits réservés.",
       "badges": ["Sécurité avancée", "Intégration sans limites", "Évolutivité totale", "Innovation constante"]
+    },
+    "contact": {
+      "eyebrow": "Parlons-en",
+      "title": "Prêt à transformer votre entreprise ?",
+      "subtitle": "Parlez-nous de votre projet et nous vous recontactons dans les 24 heures.",
+      "infoTitle": "Informations de contact",
+      "cardTitle": "Réponse garantie",
+      "cardBody": "Notre équipe répond à toutes les demandes dans un délai maximum de 24 heures ouvrables.",
+      "fields": {
+        "name": "Nom",
+        "company": "Entreprise",
+        "email": "Email",
+        "phone": "Téléphone",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Votre nom complet",
+        "company": "Nom de votre entreprise",
+        "email": "vous@email.com",
+        "phone": "+33 (0)0 00 00 00 00",
+        "message": "Parlez-nous de votre projet ou besoin..."
+      },
+      "errors": {
+        "name": "Le nom est obligatoire",
+        "email": "L'email est obligatoire",
+        "emailInvalid": "Veuillez saisir un email valide",
+        "message": "Le message est obligatoire"
+      },
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "successTitle": "Message envoyé !",
+      "successBody": "Merci de nous avoir contactés. Nous vous répondrons bientôt.",
+      "sendAnother": "Envoyer un autre message",
+      "errorMsg": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer."
     }
   }
 }
