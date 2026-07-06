@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, Sun, Moon, Globe, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useThemeContext } from "../context/ThemeContext";
-import logoImg from "../assets/logo.jpg";
+import logoImg from "../assets/Logo_brain.png";
 
 const LANGS = [
   { code: "es", label: "Español", flag: "🇲🇽" },
@@ -85,7 +85,7 @@ export default function Navbar() {
             aria-label="InToGlobe — Ir al inicio"
             className="flex items-center gap-3 shrink-0"
           >
-            <div className="w-10 h-10 rounded-xl overflow-hidden shrink-0 shadow-sm bg-white flex items-center justify-center">
+            <div className="w-10 h-10 p-1 rounded-xl overflow-hidden shrink-0 shadow-sm bg-white flex items-center justify-center">
               <img src={logoImg} alt="Logo InToGlobe" className="w-full h-full object-contain" />
             </div>
             <span className="font-display font-bold text-xl" aria-hidden="true">

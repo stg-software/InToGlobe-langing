@@ -95,20 +95,20 @@ export default function Hero() {
                   className="w-full h-full object-contain p-6"
                 />
               </div>
-              {/* <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl px-5 py-3 shadow-xl border border-purple-50" aria-hidden="true">
+              <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl px-5 py-3 shadow-xl border border-purple-50" aria-hidden="true">
                 <p className="font-display text-xs font-bold tracking-widest uppercase" style={{ color: '#7B2D8B' }}>
                   Think · Create · Transform
                 </p>
-              </div> */}
+              </div>
             </div>
           </div>
 
           {/* ── RIGHT: Texto + CTA ── */}
           <div className="order-2">
-            <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 rounded-full px-4 py-1.5 mb-6" aria-hidden="true">
+            {/* <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 rounded-full px-4 py-1.5 mb-6" aria-hidden="true">
               <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
               <span className="text-sm font-body font-medium text-brand-purple">{t("hero.badge")}</span>
-            </div>
+            </div> */}
 
             <h1 id="hero-heading" className="font-display text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-gray-900 dark:text-white">
               {t("hero.headline1")}{" "}<br className="hidden lg:block" />
